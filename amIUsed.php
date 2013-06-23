@@ -19,8 +19,7 @@
      fwrite($wh, $input);
      $count +=1;
     }//end of if
-
-  }    //end of for
+  } //end of for
 
   print "Total:".$count;
   fclose($fh); //close read handle
