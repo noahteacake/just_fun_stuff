@@ -3,7 +3,6 @@
   $file = "amIUsed.txt";
   $fh = fopen($file, 'r');
   $data1 = fread($fh, filesize($file));
-
   //echo $data1;
 
   $write = "used.txt";
@@ -24,6 +23,6 @@
   }    //end of for
 
   print "Total:".$count;
-  fclose($fh);
-  fclose($wh);
+  fclose($fh); //close read handle
+  fclose($wh); //close write handle
 ?>
